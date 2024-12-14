@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>About Me</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>My Portfolio</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Tech.html">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About Me.html">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="SDG.html">SDG</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact.html">Contact Us</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="Tech.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="SDG.html">SDG</a>
+                <a href="Contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="about-section">
+        <!-- About Left -->
+        <div class="about-left" data-aos="fade-right" data-aos-duration="1000">
+            <img src="478e4538-e975-4bc4-93e3-1b1f2c8de4cf copy.jpg" alt="Circular Image">
+        </div>
+        <!-- About Right -->
+        <div class="about-right" data-aos="fade-left" data-aos-duration="1000">
+            <h1>About Me</h1>
+            <p>I am Kate Nicole Hepuller, a first-year student pursuing a degree in Computer Science. 
+            I have always been fascinated by technology and its potential for innovation and problem-solving. 
+            As I embark on my academic journey, I am eager to develop my skills in software development, algorithms, and data structures. 
+            The program provides a strong foundation in both theoretical and practical aspects of computer science, preparing me for various opportunities in technology. 
+            Outside of my studies, I enjoy listening to music, crafting, and reading, which help me relax, express creativity, and expand my perspectives. 
+            I am excited to apply my knowledge to real-world challenges and look forward to the opportunities ahead for both academic and personal growth.</p>
+            <div class="address">
+                <ul>
+                    <li>
+                        <span class="address-logo"><i class="fas fa-paper-plane"></i></span>
+                        <p>Address:</p>
+                        <span>Lipa City, Batangas, Philippines</span>
+                    </li>
+                    <li>
+                        <span class="address-logo"><i class="fas fa-phone-alt"></i></span>
+                        <p>Phone No:</p>
+                        <span>+63 915 732-101</span>
+                    </li>
+                    <li>
+                        <span class="address-logo"><i class="far fa-envelope"></i></span>
+                        <p>Email ID:</p>
+                        <span>24-03162@g.batstate-u.edu.ph</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="expertise">
+                <h4>My Expertise</h4>
+                <ul>
+                    <li>
+                        <span class="expertise-logo"><i class="fab fa-html5"></i></span>
+                        <p>HTML</p>
+                    </li>
+                    <li>
+                        <span class="expertise-logo"><i class="fab fa-css3-alt"></i></span>
+                        <p>CSS</p>
+                    </li>
+                    <li>
+                        <span class="expertise-logo"><i class="fab fa-node-js"></i></span>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <span class="expertise-logo"><i class="fab fa-react"></i></span>
+                        <p>React JS</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset: 0});
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDGs Display</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+<nav>
+    <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <span>My Portfolio</span>
+        </div>
+        <div class="links">
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="Tech.html">Home</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="About Me.html">About</a></div>
+            <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="SDG.html">SDG</a></div>
+            <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="Contact.html">Contact Us</a></div>
+        </div>
+        <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+    </div>
+    <div class="dropdown">
+        <div class="links">
+            <a href="Tech.html">Home</a>
+            <a href="About.html">About</a>
+            <a href="SDG.html">SDG</a>
+            <a href="Contact.html">Contact Us</a>
+            <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+    </div>
+</nav>
+
+<header>
+    <h1>Sustainable Development Goals</h1>
+    <p>Learn about the 17 global goals for a better future.</p>
+</header>
+<div class="grid-container">
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/poverty/" target="_blank">
+            <img src="img/Sdg 1.jpg" alt="Goal 1">
+            <h2>Goal 1</h2>
+            <p>No Poverty</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/hunger/" target="_blank">
+            <img src="img/Sdg 2.jpg" alt="Goal 2">
+            <h2>Goal 2</h2>
+            <p>Zero Hunger</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/health/" target="_blank">
+            <img src="img/Sdg 3.png" alt="Goal 3">
+            <h2>Goal 3</h2>
+            <p>Good Health and Well-Being</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/education/" target="_blank">
+            <img src="img/SDG 4-Quality Education.jpg" alt="Goal 4">
+            <h2>Goal 4</h2>
+            <p>Quality Education</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/gender-equality/" target="_blank">
+            <img src="img/Sdg 5.jpg" alt="Goal 5">
+            <h2>Goal 5</h2>
+            <p>Gender Equality</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/water-and-sanitation/" target="_blank">
+            <img src="img/Sdg 6.jpg" alt="Goal 6">
+            <h2>Goal 6</h2>
+            <p>Clean Water and Sanitation</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/energy/" target="_blank">
+            <img src="img/Sdg 7.jpg" alt="Goal 7">
+            <h2>Goal 7</h2>
+            <p>Affordable and Clean Energy</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/economic-growth/" target="_blank">
+            <img src="img/Sdg 8.jpg" alt="Goal 8">
+            <h2>Goal 8</h2>
+            <p>Decent Work and Economic Growth</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/infrastructure/" target="_blank">
+            <img src="img/Sdg 9.jpg" alt="Goal 9">
+            <h2>Goal 9</h2>
+            <p>Industry, Innovation, and Infrastructure</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/inequality/" target="_blank">
+            <img src="img/SDG 10_ Reduced Inequalities.jpg" alt="Goal 10">
+            <h2>Goal 10</h2>
+            <p>Reduced Inequality</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/cities/" target="_blank">
+            <img src="img/Sdg 11.jpg" alt="Goal 11">
+            <h2>Goal 11</h2>
+            <p>Sustainable Cities and Communities</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/sustainable-consumption-production/" target="_blank">
+            <img src="img/Sdg 12.jpg" alt="Goal 12">
+            <h2>Goal 12</h2>
+            <p>Responsible Consumption and Production</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/climate-change/" target="_blank">
+            <img src="img/Sdg 13.jpg" alt="Goal 13">
+            <h2>Goal 13</h2>
+            <p>Climate Action</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/oceans/" target="_blank">
+            <img src="img/Sdg 14.png" alt="Goal 14">
+            <h2>Goal 14</h2>
+            <p>Life Below Water</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/biodiversity/" target="_blank">
+            <img src="img/Sdg 15.jpg" alt="Goal 15">
+            <h2>Goal 15</h2>
+            <p>Life on Land</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/peace-justice/" target="_blank">
+            <img src="img/Sdg 16.jpg" alt="Goal 16">
+            <h2>Goal 16</h2>
+            <p>Peace, Justice, and Strong Institutions</p>
+        </a>
+    </div>
+    <div class="grid-item">
+        <a href="https://www.un.org/sustainabledevelopment/globalpartnerships/" target="_blank">
+            <img src="img/Sdg 17.jpg" alt="Goal 17">
+            <h2>Goal 17</h2>
+            <p>Partnerships for the Goals</p>
+        </a>
+    </div>
+</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({offset:0});
+        </script>
+        <script>
+            function hamburg(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(0px)"
+            }
+            function cancel(){
+                const navbar = document.querySelector(".dropdown")
+                navbar.style.transform = "translateY(-500px)"
+            }
+        </script>
+
+</body>
+</html>
